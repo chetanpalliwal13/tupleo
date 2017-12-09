@@ -7,9 +7,9 @@ This package also provide converstion from tuple, list of tuple and tuple of tup
 
 def insert(index, value, tupleo):
     """
-	insert(...) method of tupleo.tuple instance
+    insert(...) method of tupleo.tuple instance
     T.insert(index, object, tupleo)  -- insert object before index in tuple, tupleo
-	"""
+    """
     if type(tupleo) != tuple:
         raise TypeError("{} is not tuple".format(tupleo))
     convertlist = list(tupleo)
@@ -18,9 +18,9 @@ def insert(index, value, tupleo):
 	
 def append(value, tupleo):
     """
-	append(...) method of tupleo.tuple instance
+    append(...) method of tupleo.tuple instance
     T.append(object, tupleo) -> None -- append object to end of tuple, tupleo
-	"""
+    """
     if type(tupleo) != tuple:
         raise TypeError("{} is not tuple".format(tupleo))
     convertlist = list(tupleo)
@@ -29,9 +29,9 @@ def append(value, tupleo):
 
 def clear(tupleo):
     """
-	clear(...) method of tupleo.tuple instance
+    clear(...) method of tupleo.tuple instance
     T.clear(tupleo) -> None -- Remove all elements from tuple, tupleo
-	"""
+    """
     if type(tupleo) != tuple:
         raise TypeError("{} is not tuple".format(tupleo))
     convertlist = list(tupleo)
@@ -40,9 +40,9 @@ def clear(tupleo):
 	
 def copy(tupleo):
     """
-	clear(...) method of tupleo.tuple instance
+    clear(...) method of tupleo.tuple instance
     T.copy(tupleo) -> Tuple -- a shallow copy of tuple, tupleo
-	"""
+    """
     if type(tupleo) != tuple:
         raise TypeError("{} is not tuple".format(tupleo))
     convertlist = list(tupleo)
@@ -50,38 +50,38 @@ def copy(tupleo):
 	
 def extend(value, tupleo):
     """
-	extend(...) method of tupleo.tuple instance
+    extend(...) method of tupleo.tuple instance
     T.extend(iterable, tupleo) -> None -- extend tuple, tupleo by appending elements from the iterable
-	"""
+    """
     if type(tupleo) != tuple:
         raise TypeError("{} is not tuple".format(tupleo))
     if type(value) !=tuple:
-	    raise TypeError("{} is not tuple".format(value))
+        raise TypeError("{} is not tuple".format(value))
     convertlist = list(tupleo)
     convertlist.extend(list(value))
     return convertlist
 	
 def pop(tupleo, *index):
     """
-	pop(...) method of tupleo.tuple instance
+    pop(...) method of tupleo.tuple instance
     T.pop(tupleo, index) -> item -- remove and return item at index (default last) from tuple, tupleo.
-	Raises IndexError if list is empty or index is out of range
-	"""
+    Raises IndexError if list is empty or index is out of range
+    """
     if type(tupleo) != tuple:
         raise TypeError("{} is not tuple".format(tupleo))
     convertlist = list(tupleo)
     if index:
         convertlist.pop(*index)
     else:
-	    convertlist.pop(len(convertlist)-1)
+        convertlist.pop(len(convertlist)-1)
     return tuple(convertlist)
 	
 def remove(value, tupleo):
     """
-	remove(...) method of tupleo.tuple instance
+    remove(...) method of tupleo.tuple instance
     T.remove(value, tupleo) -> None -- remove first occurrence of value from tuple, tupleo.
-	Raises ValueError if the value is not present
-	"""
+    Raises ValueError if the value is not present
+    """
     if type(tupleo) != tuple:
         raise TypeError("{} is not tuple".format(tupleo))
     convertlist = list(tupleo)
@@ -90,18 +90,18 @@ def remove(value, tupleo):
 	
 def reverse(tupleo):
     """
-	reverse(...) method of tupleo.tuple instance
+    reverse(...) method of tupleo.tuple instance
     T.reverse(tupleo) -- reverse *IN PLACE tuple, tupleo*
-	"""
+    """
     if type(tupleo) != tuple:
         raise TypeError("{} is not tuple".format(tupleo))
     return tupleo[::-1]
 	
 def sort(tupleo, key=None, reverse=False):
     """
-	sort(...) method of tupleo.tuple instance
+    sort(...) method of tupleo.tuple instance
     T.sort(tupleo, key=None, reverse=False) -> None -- stable sort *IN PLACE tuple, tupleo*
-	"""
+    """
     if type(tupleo) != tuple:
         raise TypeError("{} is not tuple".format(tupleo))
     convertlist = list(tupleo)
