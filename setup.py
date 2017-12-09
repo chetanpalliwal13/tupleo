@@ -7,7 +7,6 @@ setup(name='tupleo',
       author='chetanpalliwal13',
       author_email='chetanpalliwal13@gmail.com',
       license='GPL',
-      packages=['tupleo'],
       zip_safe=False,
       extras_require={
           'magic': ['python-magic']
