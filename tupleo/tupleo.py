@@ -2,7 +2,7 @@
 tupleo1.0
 Python Package which provide interface to do operation on tuple which not permitted in python to do.
 e.g tuple modification, insert element in tuple, remove elemnt from tuple.
-This package also provide converstion from tuple, list or tuple and tuple or tuple to list and dictionary format.
+This package also provide converstion from tuple, list of tuple and tuple of tuple to list and dictionary format.
 """
 
 def insert(index, value, tupleo):
