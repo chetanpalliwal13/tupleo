@@ -8,7 +8,7 @@ This package also provide converstion from tuple, list or tuple and tuple or tup
 def insert(index, value, tupleo):
     """
 	insert(...) method of tupleo.tuple instance
-    T.insert(index, object, tupleo)  -- insert object before index
+    T.insert(index, object, tupleo)  -- insert object before index in tuple, tupleo
 	"""
     if type(tupleo) != tuple:
         raise TypeError("{} is not tuple".format(tupleo))
@@ -19,7 +19,7 @@ def insert(index, value, tupleo):
 def append(value, tupleo):
     """
 	append(...) method of tupleo.tuple instance
-    T.append(object, tupleo) -> None -- append object to end of tupleo
+    T.append(object, tupleo) -> None -- append object to end of tuple, tupleo
 	"""
     if type(tupleo) != tuple:
         raise TypeError("{} is not tuple".format(tupleo))
@@ -30,7 +30,7 @@ def append(value, tupleo):
 def clear(tupleo):
     """
 	clear(...) method of tupleo.tuple instance
-    T.clear(tupleo) -> None -- Remove all elements from tupleo
+    T.clear(tupleo) -> None -- Remove all elements from tuple, tupleo
 	"""
     if type(tupleo) != tuple:
         raise TypeError("{} is not tuple".format(tupleo))
@@ -41,7 +41,7 @@ def clear(tupleo):
 def copy(tupleo):
     """
 	clear(...) method of tupleo.tuple instance
-    T.copy(tupleo) -> Tuple -- a shallow copy of tupleo
+    T.copy(tupleo) -> Tuple -- a shallow copy of tuple, tupleo
 	"""
     if type(tupleo) != tuple:
         raise TypeError("{} is not tuple".format(tupleo))
@@ -51,7 +51,7 @@ def copy(tupleo):
 def extend(value, tupleo):
     """
 	extend(...) method of tupleo.tuple instance
-    T.extend(iterable, tupleo) -> None -- extend tuple by appending elements from the iterable
+    T.extend(iterable, tupleo) -> None -- extend tuple, tupleo by appending elements from the iterable
 	"""
     if type(tupleo) != tuple:
         raise TypeError("{} is not tuple".format(tupleo))
@@ -64,7 +64,7 @@ def extend(value, tupleo):
 def pop(tupleo, *index):
     """
 	pop(...) method of tupleo.tuple instance
-    T.pop(tupleo, index) -> item -- remove and return item at index (default last).
+    T.pop(tupleo, index) -> item -- remove and return item at index (default last) from tuple, tupleo.
 	Raises IndexError if list is empty or index is out of range
 	"""
     if type(tupleo) != tuple:
@@ -79,7 +79,7 @@ def pop(tupleo, *index):
 def remove(value, tupleo):
     """
 	remove(...) method of tupleo.tuple instance
-    T.remove(value, tupleo) -> None -- remove first occurrence of value.
+    T.remove(value, tupleo) -> None -- remove first occurrence of value from tuple, tupleo.
 	Raises ValueError if the value is not present
 	"""
     if type(tupleo) != tuple:
@@ -91,7 +91,7 @@ def remove(value, tupleo):
 def reverse(tupleo):
     """
 	reverse(...) method of tupleo.tuple instance
-    T.reverse(tupleo) -- reverse *IN PLACE*
+    T.reverse(tupleo) -- reverse *IN PLACE tuple, tupleo*
 	"""
     if type(tupleo) != tuple:
         raise TypeError("{} is not tuple".format(tupleo))
@@ -100,7 +100,7 @@ def reverse(tupleo):
 def sort(tupleo, key=None, reverse=False):
     """
 	sort(...) method of tupleo.tuple instance
-    T.sort(tupleo, key=None, reverse=False) -> None -- stable sort *IN PLACE*
+    T.sort(tupleo, key=None, reverse=False) -> None -- stable sort *IN PLACE tuple, tupleo*
 	"""
     if type(tupleo) != tuple:
         raise TypeError("{} is not tuple".format(tupleo))
