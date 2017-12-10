@@ -5,8 +5,6 @@ e.g tuple modification, insert element in tuple, remove elemnt from tuple.
 This package also provide converstion from tuple, list of tuple and tuple of tuple to list and dictionary format.
 """
 
-import tupleo as tupleo
-
 def insert(index, value, tupleo):
     """
     insert(...) method of tupleo.tuple instance
@@ -133,5 +131,5 @@ def tupleToDict(tupleTo, index=0):
             dict.update({tupleTo[0]:list(tupleTo[1:])})
             return dict
         else:
-            dict.update({tupleTo[index]:list(tupleo.pop(tupleTo, index))})
+            dict.update({tupleTo[index]:list(pop(tupleTo, index))})
             return dict
