@@ -114,22 +114,22 @@ def sort(tupleo, key=None, reverse=False):
 #    - Formal conversion
 #    - Index based conversion
 
-def tupleToDict(tupleo, index=0):
+def tupleToDict(tupleTo, index=0):
     """
     tupleToDict(...) method of tupleo.tuple instance
-    T.tupleToDict(tupleo, object) -> None -- convert tuple to Dictionary.
+    T.tupleToDict(tupleTo, object) -> None -- convert tuple to Dictionary.
     if index given then index is key and remain elements are value in list format (default index 0)
     """
     dict = {}
-    if len(tupleo)==0:
+    if len(tupleTo)==0:
         return dict
-    elif len(tupleo)==1:
-        dict.update({tupleo[0]:''})
+    elif len(tupleTo)==1:
+        dict.update({tupleTo[0]:''})
         return dict
     else:
         if index==0:
-            dict.update({tupleo[0]:list(tupleo[1:])})
+            dict.update({tupleTo[0]:list(tupleTo[1:])})
             return dict
         else:
-            dict.update({tupleo[index]:list(tupleo.pop(index))})
+            dict.update({tupleTo[index]:list(tupleo.pop(tupleTo, index))})
             return dict
