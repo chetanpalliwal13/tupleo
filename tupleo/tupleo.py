@@ -5,6 +5,8 @@ e.g tuple modification, insert element in tuple, remove elemnt from tuple.
 This package also provide converstion from tuple, list of tuple and tuple of tuple to list and dictionary format.
 """
 
+import tupleo as tupleo
+
 def insert(index, value, tupleo):
     """
     insert(...) method of tupleo.tuple instance
@@ -108,7 +110,6 @@ def sort(tupleo, key=None, reverse=False):
     convertlist.sort(key=key, reverse=reverse)
     return tuple(convertlist)
 
-import tupleo as tupleo
 
 # Code for conversion of tuple, list of tuple to List and Dictionary.
 # Conversion:
