@@ -140,11 +140,15 @@ def tupleToList(tupleTo):
     """
     tupleToList(...) method of tupleo.tuple instance
     T.tupleToList(tupleTo) -> None -- convert tuple to List to Full Depth Level.
-    if passed tuple is list of tuple that conver to list at full depth level.
     """
-    if (type(tupleTo) != tuple) or (type(tupleTo) != list):
-        raise TypeError("{} is neither tuple nor list or (of tuple)".format(tupleTo))
-    tupleStr = tupleTo.__str__().replace('),)','))').replace(',)',')')
-    tupleStr = tupleStr.replace('(','[').replace(')',']')
-    tupleTolist = ast.literal_eval(tupleStr)
-    return tupleTolist
+    if type(tupleTo)==tuple:
+        tupleTo = list(tupleTo)
+    for i in range(len(tupleTo)):
+        if type(tupleTo[i])==tuple:
+            tupleTo[i]=list(tupleTo[i])
+            tupleToList(tupleTo[i])
+        elif type(tupleTo[i])==list:
+            tupleToList(tupleTo[i])
+        else:
+            pass
+    return tupleTo
