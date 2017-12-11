@@ -5,8 +5,6 @@ e.g tuple modification, insert element in tuple, remove elemnt from tuple.
 This package also provide converstion from tuple, list of tuple and tuple of tuple to list and dictionary format.
 """
 
-import ast
-
 def insert(index, value, tupleo):
     """
     insert(...) method of tupleo.tuple instance
