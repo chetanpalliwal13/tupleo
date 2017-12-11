@@ -5,6 +5,8 @@ e.g tuple modification, insert element in tuple, remove elemnt from tuple.
 This package also provide converstion from tuple, list of tuple and tuple of tuple to list and dictionary format.
 """
 
+import ast
+
 def insert(index, value, tupleo):
     """
     insert(...) method of tupleo.tuple instance
@@ -133,3 +135,13 @@ def tupleToDict(tupleTo, index=0):
         else:
             dict.update({tupleTo[index]:list(pop(tupleTo, index))})
             return dict
+	
+def tupleToList(tupleTo):
+    """
+    tupleToList(...) method of tupleo.tuple instance
+    T.tupleToList(tupleTo) -> None -- convert tuple to List to Full Depth Level.
+    """
+    tupleStr = tupleTo.__str__().replace('),)','))').replace(',)',')')
+    tupleStr = tupleStr.replace('(','[').replace(')',']')
+    tupleTolist = ast.literal_eval(tupleStr)
+    return tupleTolist
