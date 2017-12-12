@@ -120,6 +120,8 @@ def tupleToDict(tupleTo, index=0):
     T.tupleToDict(tupleTo, object) -> None -- convert tuple to Dictionary.
     if index given then index is key and remain elements are value in list format (default index 0)
     """
+    if type(tupleTo) != tuple:
+        raise TypeError("{} is not tuple".format(tupleTo))
     dict = {}
     if len(tupleTo)==0:
         return dict
