@@ -12,4 +12,4 @@ release : clean package
 	twine upload dist/*
 
 clean :
-	rm -rf build dist wrapt.egg-info
+	rm -rf build dist tupleo.egg-info
