@@ -6,5 +6,5 @@ setup(name='tupleo',
       url='https://github.com/chetanpalliwal13/tupleo',
       author='chetanpalliwal13',
       author_email='chetanpalliwal13@gmail.com',
-      license='GPL',
+      license='MIT',
       packages=['tupleo'])
